@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "pz/pzlinkgrid",
+  "version": "0.1.0",
+  "title": "PZ Link Grid",
+  "category": "widgets",
+  "description": "Show a list of all link resources.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "pzprojectgrid",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php",
+  "attributes": {
+    "myheader": {
+      "type": "string"
+    },
+    "addURL": {
+      "type": "string",
+      "default": "/edit-link/"
+    },
+    "editURL": {
+      "type": "string",
+      "default": "/edit-link/"
+    },
+    "siteURL": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "default": "none"
+    },
+    "isMenu": {
+      "type": "boolean",
+      "default": true
+    },
+    "isColumnHeaders": {
+      "type": "boolean",
+      "default": true
+    },
+    "backgroundColor": {
+      "type": "string"
+    }
+  }
+}
