@@ -4,7 +4,7 @@
  * Description:       Block that creates data grid for the link table.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.0.1
+ * Version:           0.1.0
  * Author:            Robert Richardson
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,6 +13,9 @@
  * @package           pzcontact
  */
 
+ /**
+  * 0.1.0 -- 2024-06-20 -- Increased height of grid to 1400 px
+  */
 
 
  if ( ! defined( 'ABSPATH' ) ) {
@@ -55,8 +58,9 @@ $item['field_string'] = "CREATE TABLE $table_name (
   app_id varchar(20) NOT NULL DEFAULT '',
   link_name varchar(200) NOT NULL DEFAULT '',
   link_url varchar(255) NOT NULL DEFAULT '',
+  link_primary_tag varchar(10) NOT NULL DEFAULT 'WP',
   link_image_url varchar(255) NOT NULL DEFAULT '',
-  link_description varchar(800) NOT NULL DEFAULT '',
+  link_description varchar(2000) NOT NULL DEFAULT '',
   link_tag varchar(120) NOT NULL DEFAULT '',
   live_date varchar(12) NOT NULL DEFAULT '',
   end_date varchar(12) NOT NULL DEFAULT '',

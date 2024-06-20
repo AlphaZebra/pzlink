@@ -170,10 +170,10 @@ function LinkGrid() {
   }
 
   return (
-    <div height="400" width="100%">
+    <div height="1400" width="100%">
       <Box
         sx={{
-          height: 300,
+          height: 1300,
           width: "100%",
           "& .actions": {
             color: "text.secondary",
