@@ -23,7 +23,14 @@
      } else {
       $qstr = "SELECT * FROM {$wpdb->prefix}pz_link ";
      }
+
+     // cleanup escaped chars
+     $i = 0;
      $results = $wpdb->get_results( $qstr , ARRAY_A );
+     foreach( $results as $result ) {
+      $results[$i] = stripslashes_deep($result);
+      $i++;
+     }
     
      return $results;
    }

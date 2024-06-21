@@ -31,17 +31,14 @@ import {
 let cattribute = "";
 const xdiv = document.querySelector(".pz-linkgrid-div");
 const attributes = JSON.parse(xdiv.innerText);
-console.log(attributes);
 if (attributes.category != "none") {
   cattribute = "/?cat=" + attributes.category; // otherwise, already set to "
 }
 const url = attributes.siteURL + "/wp-json/pz/v1/link" + cattribute;
-console.log(url);
 
 let response = await fetch(url);
 let json = await response.text();
 let initialRows = JSON.parse(json);
-console.log(initialRows);
 
 function handleDeleteClick() {
   window.location.href = "./edit-project/";

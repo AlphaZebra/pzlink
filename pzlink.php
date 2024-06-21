@@ -4,7 +4,7 @@
  * Description:       Block that creates data grid for the link table.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.0
+ * Version:           0.1.1
  * Author:            Robert Richardson
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,6 +14,7 @@
  */
 
  /**
+  * 0.1.1 -- 2024-06-21 -- Removed backslashes from escaped chars (in REST api)
   * 0.1.0 -- 2024-06-20 -- Increased height of grid to 1400 px
   */
 
